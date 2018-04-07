@@ -7,7 +7,7 @@
 
 >运行后在浏览器输入
 ```
-  http://localhost/test/list;
+  http://localhost/test/list
 ```
 >显示: 
 ```
@@ -15,3 +15,5 @@
 {"SEX":"1","USER_ID":2,"USER_NAME":"test2"}]
 ```
 >项目搭建成功
+---
+这是Topic/V1.0分支
