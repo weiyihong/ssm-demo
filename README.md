@@ -7,7 +7,7 @@
 
 >运行后在浏览器输入
 ```
-  http://localhost/test/list;
+  http://localhost/test/list
 ```
 >显示: 
 ```
