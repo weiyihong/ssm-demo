@@ -14,4 +14,4 @@
 [{"SEX":"0","USER_ID":1,"USER_NAME":"test1"},
 {"SEX":"1","USER_ID":2,"USER_NAME":"test2"}]
 ```
->项目搭建成功。
+>项目搭建成功
