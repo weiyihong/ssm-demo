@@ -23,13 +23,13 @@
 	<bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource"  ref="dataSource"/>
 		<property name="configLocation"  value="classpath:SqlMapConfig.xml" />
-		<property name="typeAliasesPackage"  value="org.layz.hw.pojo" />
-		<property name="mapperLocations" value="classpath*:mybatis/*Mapper.xml" />
+		<property name="typeAliasesPackage"  value="org.layz.hx.common.bean" />
+		<property name="mapperLocations" value="classpath*:mybatis/**/*Mapper.xml" />
 	</bean>
 	
 	<!-- 动态代理dao扫描配置 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-       <property name="basePackage" value="org.layz.hw.mapper" />
+       <property name="basePackage" value="org.layz.hx.mapper" />
    </bean>
 
 </beans>
