@@ -12,5 +12,10 @@
   		<artifactId>demo-interface</artifactId>
   		<version>1.0.0</version>
   	</dependency>
+  	<dependency>
+  		<groupId>org.layz.hx</groupId>
+  		<artifactId>demo-mapper</artifactId>
+  		<version>1.0.0</version>
+  	</dependency>
   </dependencies>
 </project>
