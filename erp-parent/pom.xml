@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.layz.hx</groupId>
+  <artifactId>erp-parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+  <properties>
+  	<hx.version>0.0.1-SNAPSHOT</hx.version>
+  	<erp.version>0.0.1-SNAPSHOT</erp.version>
+  </properties>
+  
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>org.layz.hx</groupId>
+  			<artifactId>hx-core</artifactId>
+  			<version>${hx.version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.layz.hx</groupId>
+  			<artifactId>hx-springmvc</artifactId>
+  			<version>${hx.version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.layz.hx</groupId>
+  			<artifactId>hx-springjdbc</artifactId>
+  			<version>${hx.version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.layz.hx</groupId>
+  			<artifactId>hx-mybatis</artifactId>
+  			<version>${hx.version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.layz.hx</groupId>
+  			<artifactId>hx-dubbo</artifactId>
+  			<version>${hx.version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.layz.hx</groupId>
+  			<artifactId>erp-domain</artifactId>
+  			<version>${erp.version}</version>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
+  <modules>
+  	<module>erp-system</module>
+  	<module>erp-domain</module>
+      <module>erp-web</module>
+  </modules>
+</project>

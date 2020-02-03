@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.layz.hx.erp.repository.mapper.system.MenuMapper">
+
+    <select id="findSystemMenu" resultType="org.layz.hx.erp.domain.entity.system.Menu">
+        SELECT
+            a.id,
+            a.parentId,
+            a.menuCode `code`,
+            a.menuName `name`,
+            a.menuType `type`,
+            a.menuSort `sort`,
+            a.menuIcon `icon`,
+            a.remark `remark`,
+            a.menuUrl `url`,
+            a.helUrl helpUrl,
+            a.deleted,
+            a.createdBy,
+            a.lastModifiedBy,
+            a.createdDate,
+            a.lastModifiedDate
+        FROM
+            sys_menu a,
+            sys_system_menu b
+        WHERE
+            a.id = b.menuId
+        AND b.sysId = ${sysId}
+    </select>
+
+    <select id="findRoleMenu" resultType="org.layz.hx.erp.domain.entity.system.Menu">
+        SELECT
+            a.id,
+            a.parentId,
+            a.menuCode `code`,
+            a.menuName `name`,
+            a.menuType `type`,
+            a.menuSort `sort`,
+            a.menuIcon `icon`,
+            a.remark `remark`,
+            a.menuUrl `url`,
+            a.helUrl helpUrl,
+            a.deleted,
+            a.createdBy,
+            a.lastModifiedBy,
+            a.createdDate,
+            a.lastModifiedDate
+        FROM
+            sys_menu a,
+            sys_role_menu b
+        WHERE
+            a.id = b.menuId
+        AND b.roleId = ${roleId}
+    </select>
+</mapper>
