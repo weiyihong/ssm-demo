@@ -17,7 +17,7 @@
 		<logback.version>1.2.3</logback.version>
 		<druid.version>1.1.20</druid.version>
 		<servlet.version>4.0.1</servlet.version>
-		<fastjson.version>1.2.62</fastjson.version>
+		<fastjson.version>1.2.83</fastjson.version>
 		<hx.version>0.0.1-SNAPSHOT</hx.version>
 		<xxl.conf.version>1.6.2-SNAPSHOT</xxl.conf.version>
 		<mybatis.version>3.5.3</mybatis.version>
