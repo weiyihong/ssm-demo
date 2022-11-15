@@ -24,7 +24,7 @@
 		<mybatis.spring.version>2.0.3</mybatis.spring.version>
 		<httpclient.version>4.5.9</httpclient.version>
 		<commons.lang3.version>3.9</commons.lang3.version>
-		<jackson.json.version>2.10.1</jackson.json.version>
+		<jackson.json.version>2.12.7.1</jackson.json.version>
 		<mysql.connection.version>8.0.18</mysql.connection.version>
 		<springframework.version>5.2.2.RELEASE</springframework.version>
 		<dubbo.version>2.6.7</dubbo.version>
